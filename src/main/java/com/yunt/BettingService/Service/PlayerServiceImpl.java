@@ -22,4 +22,8 @@ public class PlayerServiceImpl implements PlayerService{
     public List<Player> fetchPlayers() {
         return (List<Player>) playerRepository.findAll();
     }
+    @Override
+    public void deletePlayers(){
+        playerRepository.deleteAll();
+    }
 }

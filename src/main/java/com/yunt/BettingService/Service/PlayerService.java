@@ -7,4 +7,6 @@ import java.util.List;
 public interface PlayerService {
     Player savePlayer(Player player);
     List<Player> fetchPlayers();
+
+    void deletePlayers();
 }
